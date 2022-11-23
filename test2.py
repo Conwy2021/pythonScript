@@ -1,7 +1,7 @@
 import time
 
 import pyautogui
-
+#挂地图
 # sizex,sizey=pyautogui.size()
 # pyautogui.moveTo(sizex/2,sizey/2,duration=1)#duration 为过渡时间
 # pyautogui.click(button='right')
