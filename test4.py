@@ -23,7 +23,7 @@ try:
         time_left = 7200
         while time_left >= 0:
             #print("\r ",'倒计时(s): ', time_left,end="",flush=True)
-            print("\r 倒计时(s): %d " % (time_left),end="",flush=True)#显示不会有留影
+            print("\r 分解倒计时(s): %d " % (time_left),end="",flush=True)#显示不会有留影
            # print("\r", "倒计时{}秒！".format(time_left), end="", flush=True)
             time.sleep(1)
             time_left = time_left - 1

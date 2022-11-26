@@ -17,6 +17,11 @@ try:
         pyautogui.moveRel(378, -177, duration=1)
         pyautogui.click()
         pyautogui.click(975, 521, duration=1)
-        time.sleep(7200)
+        time_left = 7200
+        while time_left >= 0:
+            print("\r 挂地图倒计时(s): %d " % (time_left), end="", flush=True)  # 显示不会有留影
+            time.sleep(1)
+            time_left = time_left - 1
+        #time.sleep(7200)
 except KeyboardInterrupt:
     print('\nExit.')
