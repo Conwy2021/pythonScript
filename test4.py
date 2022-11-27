@@ -1,7 +1,9 @@
+import sys
 import time
 
 #分解
 import pyautogui
+pyautogui.FAILSAFE=False
 try:
     while True:
         time.sleep(2)
@@ -20,7 +22,7 @@ try:
         pyautogui.click()
         pyautogui.moveTo(888, 353, duration=1)
         pyautogui.click()
-        time_left = 7200
+        time_left = 3600
         while time_left >= 0:
             #print("\r ",'倒计时(s): ', time_left,end="",flush=True)
             print("\r 分解倒计时(s): %d " % (time_left),end="",flush=True)#显示不会有留影
@@ -31,3 +33,4 @@ try:
 
 except KeyboardInterrupt:
     print('\nExit.')
+    sys.exit()
